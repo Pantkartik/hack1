@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punch In/Out | Graphic Era</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="punch.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="nav-menu hide-menu" id="navMenu"></div>
+            <ul>
+                <li><a href="login.html">Dashboard</a></li>
+                <li><a href="punch.html" class="active">Punch In/Out</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><button id="logoutBtn">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="background-container"></div>
+        <div class="punch-container">
+            <section class="punch-card">
+                <h2>Punch In/Out</h2>
+                <div class="current-status" id="currentStatus">
+                    <div class="status-icon">
+                        <div class="punch-circle" id="punchCircle"></div>
+                    </div>
+                    <div class="status-text" id="statusText">Currently: Not Clocked In</div>
+                </div>
+                <div class="punch-time" id="punchTime"></div>
+                <button class="punch-btn" id="punchBtn">Punch In</button>
+                <div class="last-punch" id="lastPunch"></div>
+            </section>
+
+            <section class="today-log">
+                <h3>Today's Activity</h3>
+                <table id="todayTable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Type</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Filled by JavaScript -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="location-section">
+                <h3>Location</h3>
+                <div id="locationInfo">
+                    <p>Getting your location...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Graphic Era Hill University , Bhimtal </p>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Faculty</a></li>
+              </ul>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6>Follow Us</h6>
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="copyright-text">©️ 2025 Graphic Era Hill University. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="punch.js"></script>
+    <div id="logoutOverlay" class="logout-overlay">
+        <div class="loader-circle"></div>
+    </div>
+</body>
+</html>

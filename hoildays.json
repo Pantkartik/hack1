@@ -1,0 +1,47 @@
+[
+    {
+      "date": "2025-01-26",
+      "name": "Republic Day",
+      "type": "National"
+    },
+    {
+      "date": "2025-03-29",
+      "name": "Holi",
+      "type": "Festival"
+    },
+    {
+      "date": "2025-04-14",
+      "name": "Ambedkar Jayanti",
+      "type": "National"
+    },
+    {
+      "date": "2025-05-01",
+      "name": "Labour Day",
+      "type": "General"
+    },
+    {
+      "date": "2025-08-15",
+      "name": "Independence Day",
+      "type": "National"
+    },
+    {
+      "date": "2025-10-02",
+      "name": "Gandhi Jayanti",
+      "type": "National"
+    },
+    {
+      "date": "2025-10-24",
+      "name": "Dussehra",
+      "type": "Festival"
+    },
+    {
+      "date": "2025-11-01",
+      "name": "Diwali",
+      "type": "Festival"
+    },
+    {
+      "date": "2025-12-25",
+      "name": "Christmas",
+      "type": "Festival"
+    }
+  ]

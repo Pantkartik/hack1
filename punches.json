@@ -1,0 +1,57 @@
+[
+    {
+      "email": "rajesh.kumar@graphicera.edu.in",
+      "punches": [
+        {
+          "date": "2025-04-20",
+          "punchIn": "09:15",
+          "punchOut": "16:45"
+        },
+        {
+          "date": "2025-04-21",
+          "punchIn": "09:00",
+          "punchOut": "15:30"
+        }
+      ]
+    },
+    {
+      "email": "priya.sharma@graphicera.edu.in",
+      "punches": [
+        {
+          "date": "2025-04-20",
+          "punchIn": "08:55",
+          "punchOut": "14:20"
+        },
+        {
+          "date": "2025-04-21",
+          "punchIn": "10:10",
+          "punchOut": "17:00"
+        }
+      ]
+    },
+    {
+      "email": "amit.patel@graphicera.edu.in",
+      "punches": [
+        {
+          "date": "2025-04-20",
+          "punchIn": "09:30",
+          "punchOut": "17:00"
+        },
+        {
+          "date": "2025-04-21",
+          "punchIn": "08:50",
+          "punchOut": "14:45"
+        }
+      ]
+    },
+    {
+      "email": "neha.gupta@graphicera.edu.in",
+      "punches": [
+        {
+          "date": "2025-04-21",
+          "punchIn": "09:20",
+          "punchOut": "12:40"
+        }
+      ]
+    }
+  ]

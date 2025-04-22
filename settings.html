@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings - Faculty Time Tracking</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <header>
+    <h1>Settings</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main class="settings-container">
+    <aside class="settings-sidebar">
+      <ul>
+        <li class="active" data-tab="profile">Admin Profile</li>
+        <li data-tab="notifications">Notifications</li>
+        <li data-tab="preferences">System Preferences</li>
+      </ul>
+    </aside>
+
+    <section class="settings-content">
+      <div id="profile" class="settings-panel active">
+        <h2>Admin Profile</h2>
+        <form id="adminProfileForm">
+          <label>Name:</label>
+          <input type="text" id="adminName" required>
+
+          <label>Email:</label>
+          <input type="email" id="adminEmail" required>
+
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+
+      <div id="notifications" class="settings-panel">
+        <h2>Notification Settings</h2>
+        <form id="notificationForm">
+          <label><input type="checkbox" id="reminderToggle"> Enable daily punch reminders</label>
+          <label><input type="checkbox" id="emailSummaryToggle"> Send weekly email summary</label>
+          <button type="submit">Update Preferences</button>
+        </form>
+      </div>
+
+      <div id="preferences" class="settings-panel">
+        <h2>System Preferences</h2>
+        <form id="preferencesForm">
+          <label>Default Weekly Hours Target:</label>
+          <input type="number" id="weeklyHours" min="1" max="80" required>
+
+          <label>Working Days (comma-separated):</label>
+          <input type="text" id="workingDays" placeholder="Mon,Tue,Wed,Thu,Fri">
+
+          <button type="submit">Save Preferences</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script defer src="settings.js"></script>
+</body>
+</html>
